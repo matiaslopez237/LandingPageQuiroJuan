@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: #fdf6ee;
+  color: #5c3d1e;
+}
+
+:root {
+  --cream: #fdf6ee;
+  --cream-dark: #f0e0cc;
+  --brown: #5c3d1e;
+  --brown-light: #8b6330;
+  --gold: #c68642;
+  --green-wa: #25d366;
+  --green-wa-dark: #1da851;
+  --card-bg: #f5ede0;
+  --border: #e8d5be;
+}
