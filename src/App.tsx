@@ -8,6 +8,7 @@ import Treatment from './components/Treatment'
 import HealthBenefits from './components/HealthBenefits'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
+import FloatingWA from './components/FloatingWA'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <FAQ />
       </main>
       <Footer />
+      <FloatingWA />
     </>
   )
 }
