@@ -1,61 +1,63 @@
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'motion/react'
 
 const faqs = [
   {
-    question: '¿Es seguro para todas las edades?',
-    answer:
-      'Sí. La quiropraxia es apta para todas las edades, desde niños hasta adultos mayores.',
+    q: '¿Es seguro para todas las edades?',
+    a: 'Sí. La quiropraxia es apta para todas las edades, desde niños hasta adultos mayores.',
   },
   {
-    question: '¿Cada cuánto debo ir?',
-    answer:
-      'La frecuencia es de cada 7, 10, 15 o 30 días, según la evaluación del profesional en cada caso.',
+    q: '¿Cada cuánto debo ir?',
+    a: 'La frecuencia es de cada 7, 10, 15 o 30 días, según la evaluación del profesional en cada caso.',
   },
   {
-    question: '¿Duele el ajuste quiropráctico?',
-    answer:
-      'El ajuste es suave y generalmente no duele. Algunas personas sienten alivio inmediato. Puede haber leve sensibilidad muscular las primeras horas, que desaparece rápidamente.',
+    q: '¿Duele el ajuste quiropráctico?',
+    a: 'El ajuste es suave y generalmente no duele. Algunas personas sienten alivio inmediato. Puede haber leve sensibilidad muscular las primeras horas, que desaparece rápidamente.',
   },
   {
-    question: '¿Cuántas sesiones necesito?',
-    answer:
-      'Depende de cada caso. Luego de la evaluación inicial, el profesional indica el plan de tratamiento personalizado según el estado de la columna y los objetivos del paciente.',
+    q: '¿Cuántas sesiones necesito?',
+    a: 'Depende de cada caso. Luego de la evaluación inicial, se indica el plan de tratamiento personalizado según el estado de la columna y los objetivos del paciente.',
   },
   {
-    question: '¿Necesito derivación médica?',
-    answer:
-      'No. Podés solicitar turno directamente sin necesidad de derivación médica previa.',
+    q: '¿Necesito derivación médica?',
+    a: 'No. Podés solicitar turno directamente sin necesidad de derivación médica previa.',
   },
 ]
 
-function FAQItem({ question, answer }: { question: string; answer: string }) {
+function Item({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false)
-
   return (
     <div
-      className="border-b py-4 cursor-pointer"
-      style={{ borderColor: '#e8d5be' }}
       onClick={() => setOpen(!open)}
+      style={{
+        borderBottom: '1px solid #e8d5be',
+        padding: '18px 0',
+        cursor: 'pointer',
+      }}
     >
-      <div className="flex justify-between items-center gap-4">
-        <p className="text-base font-semibold text-left" style={{ color: '#5c3d1e' }}>
-          {question}
-        </p>
-        <span
-          className="text-lg transition-transform duration-200 flex-shrink-0"
-          style={{
-            color: '#c68642',
-            transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
-          }}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16 }}>
+        <p style={{ fontWeight: 600, fontSize: 15, color: '#5c3d1e', lineHeight: 1.4 }}>{q}</p>
+        <motion.span
+          animate={{ rotate: open ? 180 : 0 }}
+          transition={{ duration: 0.25 }}
+          style={{ color: '#c68642', fontSize: 14, flexShrink: 0, display: 'block' }}
         >
           ▲
-        </span>
+        </motion.span>
       </div>
-      {open && (
-        <p className="mt-3 text-sm md:text-base leading-relaxed text-left" style={{ color: '#8b6330' }}>
-          {answer}
-        </p>
-      )}
+      <AnimatePresence>
+        {open && (
+          <motion.p
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            style={{ overflow: 'hidden', fontSize: 14, color: '#8b6330', lineHeight: 1.7, marginTop: 10 }}
+          >
+            {a}
+          </motion.p>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
@@ -64,16 +66,26 @@ export default function FAQ() {
   return (
     <section
       id="preguntas"
-      className="py-20 px-6"
-      style={{ background: '#fdf6ee' }}
+      style={{ padding: '72px 24px 80px', background: '#fdf6ee' }}
     >
-      <div className="max-w-2xl mx-auto">
-        <p className="font-bold text-lg mb-6" style={{ color: '#5c3d1e' }}>
+      <div style={{ maxWidth: 680, margin: '0 auto' }}>
+        <motion.p
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          style={{ fontWeight: 700, fontSize: 16, color: '#5c3d1e', marginBottom: 8 }}
+        >
           Preguntas frecuentes
-        </p>
-        {faqs.map((faq) => (
-          <FAQItem key={faq.question} {...faq} />
-        ))}
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          {faqs.map(f => <Item key={f.q} {...f} />)}
+        </motion.div>
       </div>
     </section>
   )

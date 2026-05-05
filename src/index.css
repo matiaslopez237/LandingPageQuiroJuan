@@ -8,22 +8,31 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: #fdf6ee;
   color: #5c3d1e;
+  -webkit-font-smoothing: antialiased;
 }
 
 :root {
-  --cream: #fdf6ee;
-  --cream-dark: #f0e0cc;
-  --brown: #5c3d1e;
+  --cream:       #fdf6ee;
+  --cream-mid:   #f5e6d3;
+  --cream-dark:  #eddcca;
+  --brown:       #5c3d1e;
+  --brown-mid:   #7a5230;
   --brown-light: #8b6330;
-  --gold: #c68642;
-  --green-wa: #25d366;
-  --green-wa-dark: #1da851;
-  --card-bg: #f5ede0;
-  --border: #e8d5be;
+  --gold:        #c68642;
+  --gold-light:  #d4a055;
+  --card-bg:     #f5ede0;
+  --border:      #e8d5be;
+  --green-wa:    #25d366;
+  --green-wa-dk: #1da851;
 }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
