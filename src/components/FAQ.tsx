@@ -37,7 +37,15 @@ function Item({ q, a }: { q: string; a: string }) {
 
 export default function FAQ() {
   return (
-    <section id="preguntas" style={{ padding: '72px 24px 80px', background: '#EBF4FF' }}>
+    <section id="preguntas" style={{
+      padding: '72px 24px 80px',
+      backgroundColor: '#EBF4FF',
+      backgroundImage: [
+        'linear-gradient(rgba(27,58,107,0.045) 1px, transparent 1px)',
+        'linear-gradient(90deg, rgba(27,58,107,0.045) 1px, transparent 1px)',
+      ].join(', '),
+      backgroundSize: '32px 32px',
+    }}>
       <div style={{ maxWidth: 680, margin: '0 auto' }}>
         <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
           style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', color: '#E8572A', marginBottom: 12, textAlign: 'center' }}>

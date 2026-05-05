@@ -4,7 +4,12 @@ const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0 } }
 
 export default function About() {
   return (
-    <section id="nosotros" style={{ padding: '88px 24px', background: '#FFFFFF' }}>
+    <section id="nosotros" style={{
+      padding: '88px 24px',
+      backgroundColor: '#FFFFFF',
+      backgroundImage: 'radial-gradient(circle, rgba(45,90,160,0.05) 1px, transparent 1px)',
+      backgroundSize: '28px 28px',
+    }}>
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
         <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.5 }}
           style={{ textAlign: 'center', fontSize: 13, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', color: '#E8572A', marginBottom: 12 }}>

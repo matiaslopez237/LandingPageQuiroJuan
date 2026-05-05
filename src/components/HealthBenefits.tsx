@@ -1,23 +1,134 @@
 import { motion } from 'motion/react'
 
 const improvements = [
-  { label: 'Mejor calidad de sueño', icon: <path d="M17.75 4.09l-2.53 2.94-1.22-1.19 2.53-2.94 1.22 1.19zm-15.5 0l2.53 2.94 1.22-1.19L3.47 2.9 2.25 4.09zM12 4V2h-2v2h2zm6.97 4.12c0 3.13-1.73 5.85-4.28 7.28C13.18 16.7 12.12 18 10.5 18c-2.76 0-5-2.24-5-5 0-1.62 1.3-2.97 2.97-2.97H12c1.1 0 2-.9 2-2V4.5C17.41 5.2 18.97 6.85 18.97 8.12zM11 20v2h2v-2h-2zm-4.78-.47l-1.22 1.19 1.53 1.53 1.22-1.19-1.53-1.53zm10.56 0l-1.53 1.53 1.22 1.19 1.53-1.53-1.22-1.19z"/> },
-  { label: 'Más energía diaria', icon: <><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></> },
-  { label: 'Reducción del estrés', icon: <><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none"/><line x1="9" y1="9" x2="9.01" y2="9" stroke="white" strokeWidth="2" strokeLinecap="round"/><line x1="15" y1="9" x2="15.01" y2="9" stroke="white" strokeWidth="2" strokeLinecap="round"/></> },
-  { label: 'Alivio del dolor de espalda', icon: <><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></> },
-  { label: 'Mayor concentración', icon: <><circle cx="12" cy="12" r="3"/><path d="M12 1v3m0 14v3m11-11h-3M4 12H1m15.36-6.36-2.12 2.12M6.76 17.24l-2.12 2.12m14.72 0-2.12-2.12M6.76 6.76 4.64 4.64"/></> },
-  { label: 'Mayor movilidad', icon: <><path d="M13.73 4a2 2 0 0 1 3.54 0l8 14A2 2 0 0 1 23.5 21h-16a2 2 0 0 1-1.77-2.95L13.73 4z" strokeLinecap="round" strokeLinejoin="round"/><path d="M12 9v5M12 17h.01" stroke="white" strokeWidth="2" strokeLinecap="round"/></> },
-  { label: 'Mejor funcionamiento orgánico', icon: <><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></> },
-  { label: 'Sistema inmune fortalecido', icon: <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></> },
-  { label: 'Mejor estado de ánimo', icon: <><circle cx="12" cy="12" r="10"/><path d="M8 13s1.5 2 4 2 4-2 4-2" stroke="white" strokeLinecap="round" fill="none" strokeWidth="1.5"/><line x1="9" y1="9" x2="9.01" y2="9" stroke="white" strokeWidth="2.5" strokeLinecap="round"/><line x1="15" y1="9" x2="15.01" y2="9" stroke="white" strokeWidth="2.5" strokeLinecap="round"/></> },
-  { label: 'Mejor rendimiento físico', icon: <><circle cx="12" cy="5" r="2"/><path d="M12 7v8M9 11h6M10 15l-2 4M14 15l2 4"/></> },
-  { label: 'Reducción de la ansiedad', icon: <><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z"/><path d="M12 8v4l3 3" stroke="white" strokeWidth="1.8" strokeLinecap="round" fill="none"/></> },
-  { label: 'Calidad de vida elevada', icon: <><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></> },
+  {
+    label: 'Mejor calidad de sueño',
+    icon: (
+      // Crescent moon — clearly "sleep"
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    ),
+  },
+  {
+    label: 'Más energía diaria',
+    icon: (
+      // Lightning bolt — energy
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+    ),
+  },
+  {
+    label: 'Reducción del estrés',
+    icon: (
+      // Calm waves — relaxation
+      <>
+        <path d="M2 10.5c1.5-2.5 3-2.5 4.5 0s3 2.5 4.5 0 3-2.5 4.5 0 3 2.5 4.5 0" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M2 16c1.5-2.5 3-2.5 4.5 0s3 2.5 4.5 0 3-2.5 4.5 0 3 2.5 4.5 0" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      </>
+    ),
+  },
+  {
+    label: 'Alivio del dolor de espalda',
+    icon: (
+      // Spine / vertebrae — clearly "back"
+      <>
+        <rect x="8" y="2" width="8" height="4" rx="1.5" fill="none" stroke="white" strokeWidth="1.8"/>
+        <rect x="8" y="9" width="8" height="4" rx="1.5" fill="none" stroke="white" strokeWidth="1.8"/>
+        <rect x="8" y="16" width="8" height="4" rx="1.5" fill="none" stroke="white" strokeWidth="1.8"/>
+        <line x1="12" y1="6" x2="12" y2="9" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+        <line x1="12" y1="13" x2="12" y2="16" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+      </>
+    ),
+  },
+  {
+    label: 'Mayor concentración',
+    icon: (
+      // Bullseye / target — focus
+      <>
+        <circle cx="12" cy="12" r="10" fill="none" stroke="white" strokeWidth="1.8"/>
+        <circle cx="12" cy="12" r="5" fill="none" stroke="white" strokeWidth="1.8"/>
+        <circle cx="12" cy="12" r="1.8"/>
+      </>
+    ),
+  },
+  {
+    label: 'Mayor movilidad',
+    icon: (
+      // Running person — mobility
+      <>
+        <circle cx="14" cy="3.5" r="2.2"/>
+        <path d="M9 21l3.5-9.5 2.5 3.5 3-5" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M5 13.5l5-3.5 3.5 1.5" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </>
+    ),
+  },
+  {
+    label: 'Mejor funcionamiento orgánico',
+    icon: (
+      // ECG / heartbeat pulse — overall organ function
+      <path d="M2 12h4l2-7 4 14 3-7h3l2-3h4" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    ),
+  },
+  {
+    label: 'Sistema inmune fortalecido',
+    icon: (
+      // Shield with checkmark — immune defense
+      <>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="white" strokeWidth="1.8" strokeLinejoin="round"/>
+        <polyline points="9 12 11 14 15 10" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </>
+    ),
+  },
+  {
+    label: 'Mejor estado de ánimo',
+    icon: (
+      // Smiley face — mood
+      <>
+        <circle cx="12" cy="12" r="10" fill="none" stroke="white" strokeWidth="1.8"/>
+        <path d="M8.5 14.5s1.5 2 3.5 2 3.5-2 3.5-2" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+        <circle cx="9.5" cy="10" r="1.2"/>
+        <circle cx="14.5" cy="10" r="1.2"/>
+      </>
+    ),
+  },
+  {
+    label: 'Mejor rendimiento físico',
+    icon: (
+      // Dumbbell — physical performance
+      <>
+        <line x1="6" y1="5" x2="6" y2="19" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+        <line x1="18" y1="5" x2="18" y2="19" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+        <line x1="4" y1="8" x2="4" y2="16" stroke="white" strokeWidth="3.5" strokeLinecap="round"/>
+        <line x1="20" y1="8" x2="20" y2="16" stroke="white" strokeWidth="3.5" strokeLinecap="round"/>
+        <line x1="6" y1="12" x2="18" y2="12" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+      </>
+    ),
+  },
+  {
+    label: 'Reducción de la ansiedad',
+    icon: (
+      // Lotus / leaf petal — calm, natural, peace
+      <>
+        <path d="M12 21C8 21 4 17 4 13c2.5 0 5.5 1.5 6.5 5C11 13 13 7 12 3c0 4 2 10 1.5 15 1-3.5 4-5 6.5-5 0 4-4 8-8 8z" fill="none" stroke="white" strokeWidth="1.8" strokeLinejoin="round"/>
+        <line x1="12" y1="21" x2="12" y2="22" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
+      </>
+    ),
+  },
+  {
+    label: 'Calidad de vida elevada',
+    icon: (
+      // Star — quality / excellence
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+    ),
+  },
 ]
 
 export default function HealthBenefits() {
   return (
-    <section id="beneficios" style={{ padding: '88px 24px', background: '#F8FAFF' }}>
+    <section id="beneficios" style={{
+      padding: '88px 24px',
+      backgroundColor: '#F8FAFF',
+      backgroundImage: 'radial-gradient(circle, rgba(45,90,160,0.07) 1px, transparent 1px)',
+      backgroundSize: '24px 24px',
+    }}>
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
           style={{ textAlign: 'center', fontSize: 13, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', color: '#E8572A', marginBottom: 12 }}>

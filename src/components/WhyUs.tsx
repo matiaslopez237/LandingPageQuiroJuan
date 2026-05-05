@@ -4,8 +4,12 @@ const reasons = [
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E8572A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-        <path d="M11 8v6M8 11h6"/>
+        {/* Magnifying glass with spine inside */}
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35"/>
+        <line x1="8" y1="9" x2="14" y2="9"/>
+        <line x1="8" y1="12" x2="14" y2="12"/>
+        <line x1="8" y1="15" x2="12" y2="15"/>
       </svg>
     ),
     title: 'Análisis Específico',
@@ -14,7 +18,9 @@ const reasons = [
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E8572A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        {/* Leaf — natural */}
+        <path d="M6.5 6.5C9 3 16 2 20 5c2 8-5 14-11 13C3 18 3 11 6.5 6.5z"/>
+        <path d="M6.5 6.5l8.5 8.5"/>
       </svg>
     ),
     title: 'Método 100% Natural',
@@ -23,6 +29,7 @@ const reasons = [
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E8572A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        {/* Checkmark circle */}
         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
         <polyline points="22 4 12 14.01 9 11.01"/>
       </svg>
@@ -33,6 +40,7 @@ const reasons = [
   {
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E8572A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        {/* Family / group of people */}
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
         <circle cx="9" cy="7" r="4"/>
         <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
@@ -46,7 +54,15 @@ const reasons = [
 
 export default function WhyUs() {
   return (
-    <section id="por-que" style={{ padding: '88px 24px', background: '#EBF4FF' }}>
+    <section id="por-que" style={{
+      padding: '88px 24px',
+      backgroundColor: '#EBF4FF',
+      backgroundImage: [
+        'linear-gradient(rgba(27,58,107,0.05) 1px, transparent 1px)',
+        'linear-gradient(90deg, rgba(27,58,107,0.05) 1px, transparent 1px)',
+      ].join(', '),
+      backgroundSize: '32px 32px',
+    }}>
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
           style={{ textAlign: 'center', fontSize: 13, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', color: '#E8572A', marginBottom: 12 }}>

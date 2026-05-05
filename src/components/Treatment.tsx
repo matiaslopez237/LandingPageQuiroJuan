@@ -11,7 +11,12 @@ const fadeUp = { hidden: { opacity: 0, y: 24 }, visible: { opacity: 1, y: 0 } }
 
 export default function Treatment() {
   return (
-    <section id="tratamiento" style={{ padding: '80px 24px', background: '#FFFFFF' }}>
+    <section id="tratamiento" style={{
+      padding: '80px 24px',
+      backgroundColor: '#FFFFFF',
+      backgroundImage: 'repeating-linear-gradient(135deg, rgba(27,58,107,0.035) 0, rgba(27,58,107,0.035) 1px, transparent 0, transparent 50%)',
+      backgroundSize: '22px 22px',
+    }}>
       <div style={{ maxWidth: 680, margin: '0 auto' }}>
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', color: '#E8572A', marginBottom: 12 }}>

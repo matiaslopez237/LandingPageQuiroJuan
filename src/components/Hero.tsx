@@ -8,7 +8,14 @@ export default function Hero() {
       minHeight: '100vh',
       display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
       textAlign: 'center', padding: '80px 24px 60px',
-      background: 'linear-gradient(160deg, #F8FAFF 0%, #EBF4FF 50%, #D8EAFF 100%)',
+      backgroundColor: '#F0F6FF',
+      backgroundImage: [
+        'radial-gradient(ellipse 70% 55% at 50% 35%, rgba(232,87,42,0.07) 0%, transparent 65%)',
+        'radial-gradient(ellipse 80% 70% at 80% 85%, rgba(27,58,107,0.07) 0%, transparent 55%)',
+        'linear-gradient(160deg, #F8FAFF 0%, #EBF4FF 55%, #D8EAFF 100%)',
+        'radial-gradient(circle, rgba(45,90,160,0.045) 1px, transparent 1px)',
+      ].join(', '),
+      backgroundSize: '100% 100%, 100% 100%, 100% 100%, 30px 30px',
     }}>
       {/* Logo */}
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} style={{ marginBottom: 40 }}>
