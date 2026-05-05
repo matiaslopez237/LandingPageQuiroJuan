@@ -19,23 +19,7 @@ export default function Hero() {
     }}>
       {/* Logo */}
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} style={{ marginBottom: 40 }}>
-        <svg width="110" height="130" viewBox="0 0 110 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="55" y1="8" x2="55" y2="118" stroke="#E8572A" strokeWidth="2" strokeLinecap="round"/>
-          {[18, 31, 44, 57, 70, 83].map((y, i) => (
-            <rect key={i} x="44" y={y} width="22" height="9" rx="2.5" fill="none" stroke="#E8572A" strokeWidth="1.5"/>
-          ))}
-          <circle cx="76" cy="18" r="9" fill="none" stroke="#1B3A6B" strokeWidth="1.5"/>
-          <line x1="76" y1="27" x2="76" y2="34" stroke="#1B3A6B" strokeWidth="1.5"/>
-          <path d="M 76 34 C 76 34 85 42 83 60 C 81 75 76 90 76 90" stroke="#1B3A6B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M 76 38 C 88 42 92 55 88 68" stroke="#1B3A6B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M 76 38 C 68 44 66 57 70 68" stroke="#1B3A6B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M 76 90 C 74 100 72 110 70 120" stroke="#1B3A6B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M 76 90 C 78 100 80 110 82 120" stroke="#1B3A6B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M 30 20 L 34 24 L 30 28" stroke="#E8572A" strokeWidth="1.3" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
-          <line x1="24" y1="14" x2="28" y2="18" stroke="#E8572A" strokeWidth="1.3" strokeLinecap="round"/>
-          <line x1="34" y1="10" x2="34" y2="15" stroke="#E8572A" strokeWidth="1.3" strokeLinecap="round"/>
-          <line x1="26" y1="28" x2="30" y2="28" stroke="#E8572A" strokeWidth="1.3" strokeLinecap="round"/>
-        </svg>
+        <img src="/LandingPageQuiroJuan/logo-quiropraxia.svg" alt="Quiropraxia Logo" style={{ width: 140, height: 'auto' }} />
       </motion.div>
 
       <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}

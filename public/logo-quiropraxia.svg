@@ -1,0 +1,74 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle for context (optional, remove if not needed) -->
+  <defs>
+    <linearGradient id="spinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8572A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C94A20;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Spine vertebrae (central column) -->
+  <g filter="url(#glow)">
+    <!-- Central line -->
+    <line x1="100" y1="30" x2="100" y2="190" stroke="#E8572A" stroke-width="2"/>
+
+    <!-- Vertebrae - hexagons -->
+    <rect x="85" y="35" width="30" height="12" rx="2" fill="url(#spinGradient)" stroke="#C94A20" stroke-width="1"/>
+    <rect x="85" y="55" width="30" height="12" rx="2" fill="url(#spinGradient)" stroke="#C94A20" stroke-width="1"/>
+    <rect x="85" y="75" width="30" height="12" rx="2" fill="url(#spinGradient)" stroke="#C94A20" stroke-width="1"/>
+    <rect x="85" y="95" width="30" height="12" rx="2" fill="url(#spinGradient)" stroke="#C94A20" stroke-width="1"/>
+    <rect x="85" y="115" width="30" height="12" rx="2" fill="url(#spinGradient)" stroke="#C94A20" stroke-width="1"/>
+    <rect x="85" y="135" width="30" height="12" rx="2" fill="url(#spinGradient)" stroke="#C94A20" stroke-width="1"/>
+    <rect x="85" y="155" width="30" height="12" rx="2" fill="url(#spinGradient)" stroke="#C94A20" stroke-width="1"/>
+
+    <!-- Connecting lines between vertebrae -->
+    <line x1="100" y1="47" x2="100" y2="55" stroke="#E8572A" stroke-width="1.5" opacity="0.6"/>
+    <line x1="100" y1="67" x2="100" y2="75" stroke="#E8572A" stroke-width="1.5" opacity="0.6"/>
+    <line x1="100" y1="87" x2="100" y2="95" stroke="#E8572A" stroke-width="1.5" opacity="0.6"/>
+    <line x1="100" y1="107" x2="100" y2="115" stroke="#E8572A" stroke-width="1.5" opacity="0.6"/>
+    <line x1="100" y1="127" x2="100" y2="135" stroke="#E8572A" stroke-width="1.5" opacity="0.6"/>
+    <line x1="100" y1="147" x2="100" y2="155" stroke="#E8572A" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Human figure (right side) -->
+  <g>
+    <!-- Head -->
+    <circle cx="145" cy="50" r="12" fill="#1B3A6B" stroke="#1B3A6B" stroke-width="1.5"/>
+
+    <!-- Neck -->
+    <line x1="145" y1="62" x2="145" y2="75" stroke="#1B3A6B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Torso -->
+    <line x1="145" y1="75" x2="145" y2="130" stroke="#1B3A6B" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Arms -->
+    <line x1="145" y1="85" x2="125" y2="100" stroke="#1B3A6B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="145" y1="85" x2="165" y2="100" stroke="#1B3A6B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Legs -->
+    <line x1="145" y1="130" x2="135" y2="165" stroke="#1B3A6B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="145" y1="130" x2="155" y2="165" stroke="#1B3A6B" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Feet -->
+    <circle cx="135" cy="170" r="3" fill="#1B3A6B"/>
+    <circle cx="155" cy="170" r="3" fill="#1B3A6B"/>
+  </g>
+
+  <!-- Wellness indicator (small rays from head) -->
+  <g stroke="#E8572A" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+    <line x1="145" y1="35" x2="145" y2="25"/>
+    <line x1="158" y1="40" x2="165" y2="32"/>
+    <line x1="160" y1="50" x2="172" y2="50"/>
+  </g>
+
+  <!-- Bottom text (optional) -->
+  <text x="100" y="215" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#1B3A6B" text-anchor="middle">QUIROPRAXIA</text>
+  <text x="100" y="232" font-family="Arial, sans-serif" font-size="10" fill="#E8572A" text-anchor="middle">Salud Natural</text>
+</svg>
