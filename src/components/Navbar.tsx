@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 
 const links = [
-  { label: 'Inicio',       href: '#inicio' },
-  { label: 'Tratamiento',  href: '#tratamiento' },
-  { label: 'Preguntas',    href: '#preguntas' },
+  { label: 'Inicio',      href: '#inicio' },
+  { label: 'Quiénes',     href: '#nosotros' },
+  { label: 'Servicios',   href: '#servicios' },
+  { label: 'Beneficios',  href: '#beneficios' },
+  { label: 'FAQ',         href: '#preguntas' },
 ]
 
 const WA = '5492995502644'
