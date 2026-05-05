@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '5491100000000' // Reemplazar con número real
+const WHATSAPP_NUMBER = '5492995502644'
 const INSTAGRAM_URL = 'https://www.instagram.com/quiropractico_jm/'
 
 export default function Footer() {

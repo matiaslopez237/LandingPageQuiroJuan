@@ -6,7 +6,7 @@ const links = [
   { label: 'Preguntas', href: '#preguntas' },
 ]
 
-const WHATSAPP_NUMBER = '5491100000000'
+const WHATSAPP_NUMBER = '5492995502644'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)

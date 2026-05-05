@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = '5491100000000' // Reemplazar con número real
+const WHATSAPP_NUMBER = '5492995502644'
 
 export default function Hero() {
   return (
