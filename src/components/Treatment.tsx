@@ -26,14 +26,14 @@ export default function Treatment() {
             Tratamiento Quiropráctico
           </h2>
           <p style={{ fontSize: 15, color: '#5478BC', lineHeight: 1.8, marginBottom: 28 }}>
-            Ciencia que detecta, analiza y corrige subluxaciones vertebrales. Al alinear la columna se libera el sistema nervioso. Para todas las edades, hombres y mujeres.
+            Al corregir las subluxaciones vertebrales, la columna recupera su alineación y el sistema nervioso puede funcionar sin interferencias, mejorando la salud de todo el organismo.
           </p>
         </motion.div>
 
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.15 }}
           style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 32 }}>
           {[
-            { label: 'Indicaciones:', text: 'Para todas las edades, hombres y mujeres.' },
+            { label: 'Indicaciones:', text: 'Cualquier persona con síntomas o que busque prevención y bienestar general.' },
             { label: 'Sesiones:', text: 'Cada 7, 10, 15 o 30 días según evaluación profesional.' },
           ].map(item => (
             <div key={item.label} style={{ background: '#EBF4FF', border: '1px solid #D0DCF0', borderRadius: 12, padding: '14px 18px', fontSize: 15, lineHeight: 1.5 }}>
