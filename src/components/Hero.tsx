@@ -6,26 +6,6 @@ const WA = '5492995502644'
 export default function Hero() {
   return (
     <>
-      {/* SVG clip-path definition (wave curve for photo panel) */}
-      <svg width="0" height="0" style={{ position: 'absolute', overflow: 'hidden' }}>
-        <defs>
-          <clipPath id="heroWave" clipPathUnits="objectBoundingBox">
-            {/*
-              S-curve on the left edge of the photo:
-              Starts top-left offset → curves left at 25% → inflects at 50% → curves left at 75% → ends bottom-left offset
-            */}
-            <path d="
-              M 0.12, 0
-              C 0, 0.12   0, 0.38   0.07, 0.5
-              C 0, 0.62   0, 0.88   0.12, 1
-              L 1, 1
-              L 1, 0
-              Z
-            "/>
-          </clipPath>
-        </defs>
-      </svg>
-
       <section id="inicio" style={{
         minHeight: '100vh',
         display: 'flex',
@@ -155,8 +135,8 @@ export default function Hero() {
           style={{
             flex: '1 1 44%',
             position: 'relative',
-            clipPath: 'url(#heroWave)',
-            marginLeft: '-2px', /* close any sub-pixel gap */
+            clipPath: 'polygon(9% 0%, 100% 0%, 100% 100%, 9% 100%, 0% 85%, 6% 68%, 3% 50%, 6% 32%, 0% 15%)',
+            marginLeft: '-3px', /* close any sub-pixel gap */
           }}
         >
           <img
@@ -170,6 +150,14 @@ export default function Hero() {
               display: 'block',
             }}
           />
+          {/* Left-edge fade for smooth wave transition */}
+          <div style={{
+            position: 'absolute',
+            top: 0, left: 0, bottom: 0, width: '22%',
+            background: 'linear-gradient(to right, rgba(240,246,255,0.92) 0%, rgba(240,246,255,0.4) 50%, transparent 100%)',
+            pointerEvents: 'none',
+            zIndex: 1,
+          }} />
           {/* Subtle dark gradient at bottom for polish */}
           <div style={{
             position: 'absolute',
