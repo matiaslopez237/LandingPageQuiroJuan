@@ -44,7 +44,7 @@ export default function Hero() {
             <img
               src="/LandingPageQuiroJuan/logo-quiropraxia.png"
               alt="Quiropraxia Logo"
-              style={{ width: 'clamp(90px, 8vw, 130px)', height: 'auto', flexShrink: 0 }}
+              style={{ width: 'clamp(110px, 10vw, 160px)', height: 'auto', flexShrink: 0 }}
             />
             <motion.h1
               initial={{ opacity: 0, x: -10 }}
@@ -147,7 +147,7 @@ export default function Hero() {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              objectPosition: 'center top',
+              objectPosition: '50% 65%',
               display: 'block',
             }}
           />
