@@ -12,6 +12,7 @@ export default function Hero() {
         flexDirection: 'row',
         overflow: 'hidden',
         position: 'relative',
+        backgroundColor: '#D8EAFF', /* fills clipped area so no white gap at wave edges */
       }}>
         {/* ── LEFT PANEL: content ── */}
         <div style={{
@@ -43,7 +44,7 @@ export default function Hero() {
             <img
               src="/LandingPageQuiroJuan/logo-quiropraxia.png"
               alt="Quiropraxia Logo"
-              style={{ width: 90, height: 'auto', flexShrink: 0 }}
+              style={{ width: 'clamp(90px, 8vw, 130px)', height: 'auto', flexShrink: 0 }}
             />
             <motion.h1
               initial={{ opacity: 0, x: -10 }}
@@ -135,7 +136,7 @@ export default function Hero() {
           style={{
             flex: '1 1 44%',
             position: 'relative',
-            clipPath: 'polygon(9% 0%, 100% 0%, 100% 100%, 9% 100%, 0% 85%, 6% 68%, 3% 50%, 6% 32%, 0% 15%)',
+            clipPath: 'polygon(9% 0%, 100% 0%, 100% 100%, 9% 100%, 8.4% 92%, 6.9% 84%, 4.8% 76%, 2.6% 68%, 0.9% 60%, 0% 50%, 0.9% 40%, 2.6% 32%, 4.8% 24%, 6.9% 16%, 8.4% 8%)',
             marginLeft: '-3px', /* close any sub-pixel gap */
           }}
         >
