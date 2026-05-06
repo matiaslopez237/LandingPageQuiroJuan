@@ -19,7 +19,7 @@ export default function Hero() {
     }}>
       {/* Logo */}
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} style={{ marginBottom: 40 }}>
-        <img src="/LandingPageQuiroJuan/logo-axial.svg" alt="Quiropraxia Logo" style={{ width: 160, height: 'auto' }} />
+        <img src="/LandingPageQuiroJuan/logo-quiropraxia.svg" alt="Quiropraxia Logo" style={{ width: 130, height: 'auto' }} />
       </motion.div>
 
       <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}
