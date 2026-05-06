@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react'
 
 const links = [
   { label: 'Inicio',      href: '#inicio' },
-  { label: 'Quiénes',     href: '#nosotros' },
+  { label: 'Nosotros',    href: '#nosotros' },
   { label: 'Servicios',   href: '#servicios' },
   { label: 'Beneficios',  href: '#beneficios' },
   { label: 'FAQ',         href: '#preguntas' },
