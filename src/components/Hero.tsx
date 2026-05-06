@@ -53,39 +53,39 @@ export default function Hero() {
           position: 'relative',
           zIndex: 2,
         }}>
-          {/* Logo */}
+          {/* Logo + título en fila */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            style={{ marginBottom: 32 }}
+            style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 28 }}
           >
             <img
               src="/LandingPageQuiroJuan/logo-quiropraxia.png"
               alt="Quiropraxia Logo"
-              style={{ width: 120, height: 'auto' }}
+              style={{ width: 90, height: 'auto', flexShrink: 0 }}
             />
+            <motion.h1
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              style={{
+                fontFamily: 'Georgia, "Times New Roman", serif',
+                fontSize: 'clamp(26px, 3.8vw, 48px)',
+                fontWeight: 700,
+                color: '#1B3A6B',
+                letterSpacing: '-0.5px',
+                lineHeight: 1.15,
+                textAlign: 'left',
+                margin: 0,
+              }}
+            >
+              Quiropraxia<br/>
+              <span style={{ fontSize: '0.72em', fontWeight: 600, color: '#2D5AA0' }}>
+                Lic. Juan Manuel Martinez
+              </span>
+            </motion.h1>
           </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            style={{
-              fontFamily: 'Georgia, "Times New Roman", serif',
-              fontSize: 'clamp(30px, 4.5vw, 52px)',
-              fontWeight: 700,
-              color: '#1B3A6B',
-              letterSpacing: '-0.5px',
-              lineHeight: 1.15,
-              marginBottom: 18,
-            }}
-          >
-            Quiropraxia<br/>
-            <span style={{ fontSize: '0.78em', fontWeight: 600, color: '#2D5AA0' }}>
-              Lic. Juan Manuel Martinez
-            </span>
-          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
