@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { HEX_BG, HEX_SIZE } from '../hexPattern'
 
 const WA = '5492995502644'
 
@@ -13,9 +14,9 @@ export default function Hero() {
         'radial-gradient(ellipse 70% 55% at 50% 35%, rgba(232,87,42,0.07) 0%, transparent 65%)',
         'radial-gradient(ellipse 80% 70% at 80% 85%, rgba(27,58,107,0.07) 0%, transparent 55%)',
         'linear-gradient(160deg, #F8FAFF 0%, #EBF4FF 55%, #D8EAFF 100%)',
-        'radial-gradient(circle, rgba(45,90,160,0.045) 1px, transparent 1px)',
+        HEX_BG,
       ].join(', '),
-      backgroundSize: '100% 100%, 100% 100%, 100% 100%, 30px 30px',
+      backgroundSize: `100% 100%, 100% 100%, 100% 100%, ${HEX_SIZE}`,
     }}>
       {/* Logo */}
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} style={{ marginBottom: 40 }}>

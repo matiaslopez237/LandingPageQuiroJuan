@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
+import { HEX_BG, HEX_SIZE } from '../hexPattern'
 
 const faqs = [
   { q: '¿Es seguro para todas las edades?', a: 'Sí. La quiropraxia es apta para todas las edades, desde niños hasta adultos mayores.' },
@@ -40,11 +41,8 @@ export default function FAQ() {
     <section id="preguntas" style={{
       padding: '72px 24px 80px',
       backgroundColor: '#EBF4FF',
-      backgroundImage: [
-        'linear-gradient(rgba(27,58,107,0.045) 1px, transparent 1px)',
-        'linear-gradient(90deg, rgba(27,58,107,0.045) 1px, transparent 1px)',
-      ].join(', '),
-      backgroundSize: '32px 32px',
+      backgroundImage: HEX_BG,
+      backgroundSize: HEX_SIZE,
     }}>
       <div style={{ maxWidth: 680, margin: '0 auto' }}>
         <motion.p initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}

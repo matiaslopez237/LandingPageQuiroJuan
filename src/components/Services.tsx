@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { HEX_BG, HEX_SIZE } from '../hexPattern'
 
 const services = [
   {
@@ -79,11 +80,8 @@ export default function Services() {
     <section id="servicios" style={{
       padding: '88px 24px',
       backgroundColor: '#EBF4FF',
-      backgroundImage: [
-        'repeating-linear-gradient(45deg, rgba(27,58,107,0.04) 0, rgba(27,58,107,0.04) 1px, transparent 0, transparent 50%)',
-        'linear-gradient(180deg, #EBF4FF 0%, #F8FAFF 100%)',
-      ].join(', '),
-      backgroundSize: '18px 18px, 100% 100%',
+      backgroundImage: [`linear-gradient(180deg, #EBF4FF 0%, #F8FAFF 100%)`, HEX_BG].join(', '),
+      backgroundSize: `100% 100%, ${HEX_SIZE}`,
     }}>
       <div style={{ maxWidth: 960, margin: '0 auto' }}>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}

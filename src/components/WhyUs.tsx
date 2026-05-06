@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { HEX_BG, HEX_SIZE } from '../hexPattern'
 
 const reasons = [
   {
@@ -57,11 +58,8 @@ export default function WhyUs() {
     <section id="por-que" style={{
       padding: '88px 24px',
       backgroundColor: '#EBF4FF',
-      backgroundImage: [
-        'linear-gradient(rgba(27,58,107,0.05) 1px, transparent 1px)',
-        'linear-gradient(90deg, rgba(27,58,107,0.05) 1px, transparent 1px)',
-      ].join(', '),
-      backgroundSize: '32px 32px',
+      backgroundImage: HEX_BG,
+      backgroundSize: HEX_SIZE,
     }}>
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}

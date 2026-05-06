@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { HEX_BG, HEX_SIZE } from '../hexPattern'
 
 const benefits = [
   'Hernias de disco','Cervicalgia y lumbalgia','Contracturas musculares','Protusión vertebral',
@@ -14,8 +15,8 @@ export default function Treatment() {
     <section id="tratamiento" style={{
       padding: '80px 24px',
       backgroundColor: '#FFFFFF',
-      backgroundImage: 'repeating-linear-gradient(135deg, rgba(27,58,107,0.035) 0, rgba(27,58,107,0.035) 1px, transparent 0, transparent 50%)',
-      backgroundSize: '22px 22px',
+      backgroundImage: HEX_BG,
+      backgroundSize: HEX_SIZE,
     }}>
       <div style={{ maxWidth: 680, margin: '0 auto' }}>
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }}>

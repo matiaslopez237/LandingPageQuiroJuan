@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { HEX_BG, HEX_SIZE } from '../hexPattern'
 
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0 } }
 
@@ -7,8 +8,8 @@ export default function About() {
     <section id="nosotros" style={{
       padding: '88px 24px',
       backgroundColor: '#FFFFFF',
-      backgroundImage: 'radial-gradient(circle, rgba(45,90,160,0.05) 1px, transparent 1px)',
-      backgroundSize: '28px 28px',
+      backgroundImage: HEX_BG,
+      backgroundSize: HEX_SIZE,
     }}>
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
         <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.5 }}

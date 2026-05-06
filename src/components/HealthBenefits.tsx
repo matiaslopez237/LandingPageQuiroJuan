@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { HEX_BG, HEX_SIZE } from '../hexPattern'
 
 const improvements = [
   {
@@ -126,8 +127,8 @@ export default function HealthBenefits() {
     <section id="beneficios" style={{
       padding: '88px 24px',
       backgroundColor: '#F8FAFF',
-      backgroundImage: 'radial-gradient(circle, rgba(45,90,160,0.07) 1px, transparent 1px)',
-      backgroundSize: '24px 24px',
+      backgroundImage: HEX_BG,
+      backgroundSize: HEX_SIZE,
     }}>
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
