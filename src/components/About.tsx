@@ -66,21 +66,6 @@ export default function About() {
               buscando siempre entender la causa raíz de cada caso y no solo los síntomas.
             </p>
 
-            <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-              {[
-                { num: '100%', label: 'Natural' },
-                { num: 'Todas', label: 'las edades' },
-                { num: 'Causa', label: 'raíz' },
-              ].map(s => (
-                <div key={s.label} style={{
-                  textAlign: 'center', padding: '14px 20px',
-                  background: '#EBF4FF', borderRadius: 14, border: '1px solid #D0DCF0', minWidth: 90,
-                }}>
-                  <p style={{ fontFamily: 'Georgia, serif', fontSize: 20, fontWeight: 700, color: '#E8572A' }}>{s.num}</p>
-                  <p style={{ fontSize: 12, color: '#5478BC', marginTop: 2 }}>{s.label}</p>
-                </div>
-              ))}
-            </div>
           </motion.div>
         </div>
       </div>

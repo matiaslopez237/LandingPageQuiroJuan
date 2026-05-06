@@ -23,8 +23,8 @@ const reasons = [
         <path d="M6.5 6.5l8.5 8.5"/>
       </svg>
     ),
-    title: 'Método 100% Natural',
-    desc: 'Sin medicamentos ni cirugías. Activamos la capacidad innata del cuerpo para sanar y mantener el equilibrio por sí mismo.',
+    title: 'Formación Universitaria',
+    desc: 'Egresado universitario con formación clínica específica en quiropraxia, aplicando protocolos respaldados por evidencia científica.',
   },
   {
     icon: (
@@ -47,8 +47,8 @@ const reasons = [
         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
       </svg>
     ),
-    title: 'Para Toda la Familia',
-    desc: 'Atendemos a personas de todas las edades, desde recién nacidos hasta adultos mayores, con técnicas adaptadas a cada etapa de la vida.',
+    title: 'Trato Cercano',
+    desc: 'Cada paciente es escuchado y comprendido. El objetivo es encontrar la causa raíz, no enmascarar síntomas, con seguimiento personalizado.',
   },
 ]
 

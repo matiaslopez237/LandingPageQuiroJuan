@@ -28,13 +28,8 @@ export default function Hero() {
       </motion.h1>
 
       <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.35 }}
-        style={{ fontSize: 'clamp(17px, 3vw, 22px)', color: '#2D5AA0', maxWidth: 520, lineHeight: 1.5, marginBottom: 28, fontWeight: 400 }}>
+        style={{ fontSize: 'clamp(17px, 3vw, 22px)', color: '#2D5AA0', maxWidth: 520, lineHeight: 1.5, marginBottom: 44, fontWeight: 400 }}>
         Detectamos, analizamos y corregimos subluxaciones vertebrales para mejorar tu calidad de vida
-      </motion.p>
-
-      <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.5 }}
-        style={{ fontSize: 'clamp(14px, 2.5vw, 17px)', color: '#5478BC', maxWidth: 560, lineHeight: 1.7, marginBottom: 44 }}>
-        La quiropraxia es una ciencia que detecta, analiza y corrige subluxaciones vertebrales. Al alinear la columna liberamos el sistema nervioso para que funcione de manera óptima. Apta para todas las edades, hombres y mujeres.
       </motion.p>
 
       <motion.a
