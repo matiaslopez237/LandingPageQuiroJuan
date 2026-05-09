@@ -21,10 +21,10 @@ export default function Treatment() {
       <div style={{ maxWidth: 680, margin: '0 auto' }}>
         <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', color: '#E8572A', marginBottom: 12 }}>
-            Tratamiento
+            Cuidado Quiropráctico
           </p>
           <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(24px, 4vw, 32px)', fontWeight: 700, color: '#1B3A6B', marginBottom: 14 }}>
-            Tratamiento Quiropráctico
+            El cuidado de tu columna vertebral
           </h2>
           <p style={{ fontSize: 15, color: '#5478BC', lineHeight: 1.8, marginBottom: 28 }}>
             Al corregir las subluxaciones vertebrales, la columna recupera su alineación y el sistema nervioso puede funcionar sin interferencias, mejorando la salud de todo el organismo.
