@@ -34,39 +34,15 @@ export default function Hero() {
           position: 'relative',
           zIndex: 2,
         }}>
-          {/* Logo + título en fila */}
-          <motion.div
+          {/* Logo hero */}
+          <motion.img
+            src={`${import.meta.env.BASE_URL}LogoJuanHero.png`}
+            alt="Quiropraxia Lic. Juan Manuel Martinez"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            style={{ display: 'flex', alignItems: 'center', gap: 20, marginBottom: 28 }}
-          >
-            <img
-              src="/LandingPageQuiroJuan/logo-quiropraxia.png"
-              alt="Quiropraxia Logo"
-              style={{ width: 'clamp(110px, 10vw, 160px)', height: 'auto', flexShrink: 0 }}
-            />
-            <motion.h1
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              style={{
-                fontFamily: 'Georgia, "Times New Roman", serif',
-                fontSize: 'clamp(26px, 3.8vw, 48px)',
-                fontWeight: 700,
-                color: '#1B3A6B',
-                letterSpacing: '-0.5px',
-                lineHeight: 1.15,
-                textAlign: 'left',
-                margin: 0,
-              }}
-            >
-              Quiropraxia<br/>
-              <span style={{ fontSize: '0.72em', fontWeight: 600, color: '#2D5AA0' }}>
-                Lic. Juan Manuel Martinez
-              </span>
-            </motion.h1>
-          </motion.div>
+            style={{ width: 'clamp(220px, 28vw, 380px)', height: 'auto', marginBottom: 28 }}
+          />
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}

@@ -8,6 +8,7 @@ const faqs = [
   { q: '¿Duele el ajuste quiropráctico?', a: 'El ajuste es suave y generalmente no duele. Algunas personas sienten alivio inmediato. Puede haber leve sensibilidad muscular las primeras horas, que desaparece rápidamente.' },
   { q: '¿Cuántas sesiones necesito?', a: 'Depende de cada caso. Luego de la evaluación inicial, se indica el plan de tratamiento personalizado según el estado de la columna y los objetivos del paciente.' },
   { q: '¿Necesito derivación médica?', a: 'No. Podés solicitar turno directamente sin necesidad de derivación médica previa.' },
+  { q: '¿Qué es una subluxación y por qué es importante corregirla?', a: 'Las subluxaciones son pequeñas desviaciones o desplazamientos de las vértebras que producen interferencias nerviosas (tensión/presión) afectando la comunicación entre el cerebro, la médula espinal y cada célula del cuerpo. Si bien una subluxación puede no presentar síntomas, afecta y limita el rendimiento en diferentes aspectos: coordinación, humor, energía, sensibilidad, motricidad y reparación. Corregir subluxaciones vertebrales permite que el cuerpo recupere su mejor versión, devolviendo la capacidad innata del organismo de autorregularse y así sanar diferentes dolencias, enfermedades y mantener una salud óptima.' },
 ]
 
 function Item({ q, a }: { q: string; a: string }) {
