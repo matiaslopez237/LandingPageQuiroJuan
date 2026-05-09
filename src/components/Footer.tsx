@@ -10,7 +10,8 @@ export default function Footer() {
         style={{ maxWidth: 480, margin: '0 auto', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18 }}>
         <div style={{ width: 40, height: 2, background: '#E8572A', borderRadius: 1 }} />
         <p style={{ fontFamily: 'Georgia, serif', fontSize: 20, fontWeight: 700, color: '#FFFFFF' }}>Lic. Juan Manuel Martinez</p>
-        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)' }}>Quiropráctico · Buenos Aires, Argentina</p>
+        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)' }}>Quiropráctico · Cipolletti, Río Negro</p>
+        <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)' }}>Atención eventual en Catriel y Rincón de los Sauces</p>
 
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
           <motion.a href={`https://wa.me/${WA}`} target="_blank" rel="noopener noreferrer"
