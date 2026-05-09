@@ -27,7 +27,7 @@ export default function Treatment() {
             El cuidado de tu columna vertebral
           </h2>
           <p style={{ fontSize: 15, color: '#5478BC', lineHeight: 1.8, marginBottom: 28 }}>
-            Al corregir las subluxaciones vertebrales, la columna recupera su alineación y el sistema nervioso puede funcionar sin interferencias, mejorando la salud de todo el organismo.
+            Un tratamiento tiene un inicio y un final. Un Cuidado es para toda la vida. Al corregir las subluxaciones vertebrales, la columna recupera su alineación y el sistema nervioso puede funcionar sin interferencias, mejorando la salud de todo el organismo.
           </p>
         </motion.div>
 
