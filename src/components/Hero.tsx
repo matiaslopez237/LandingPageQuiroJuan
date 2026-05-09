@@ -34,15 +34,24 @@ export default function Hero() {
           position: 'relative',
           zIndex: 2,
         }}>
-          {/* Logo hero */}
-          <motion.img
-            src={`${import.meta.env.BASE_URL}LogoJuanHero.png`}
-            alt="Quiropraxia Lic. Juan Manuel Martinez"
+          {/* Logo + columna en fila */}
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            style={{ width: 'clamp(220px, 28vw, 380px)', height: 'auto', marginBottom: 28 }}
-          />
+            style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 28 }}
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}columnahero.png`}
+              alt="Columna vertebral"
+              style={{ height: 'clamp(80px, 10vw, 140px)', width: 'auto', flexShrink: 0 }}
+            />
+            <img
+              src={`${import.meta.env.BASE_URL}LogoJuanHero.png`}
+              alt="Quiropraxia Lic. Juan Manuel Martinez"
+              style={{ width: 'clamp(180px, 22vw, 320px)', height: 'auto' }}
+            />
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
