@@ -33,7 +33,7 @@ export default function About() {
               background: '#EBF4FF',
             }}>
               <img
-                src="/LandingPageQuiroJuan/juan.jpg"
+                src="/juan.jpg"
                 alt="Lic. Juan Manuel Martinez"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
                 onError={e => {

@@ -126,7 +126,7 @@ export default function Hero() {
           }}
         >
           <img
-            src="/LandingPageQuiroJuan/hero-foto.jpg"
+            src="/hero-foto.jpg"
             alt="Juan Manuel Martinez realizando ajuste quiropráctico"
             style={{
               width: '100%',
