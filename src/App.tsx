@@ -8,6 +8,7 @@ import Treatment from './components/Treatment'
 import SpecificAnalysis from './components/SpecificAnalysis'
 import WhyNotSymptoms from './components/WhyNotSymptoms'
 import HealthBenefits from './components/HealthBenefits'
+import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Conclusion from './components/Conclusion'
 import Footer from './components/Footer'
@@ -26,6 +27,7 @@ export default function App() {
         <SpecificAnalysis />
         <WhyNotSymptoms />
         <HealthBenefits />
+        <Testimonials />
         <FAQ />
         <Conclusion />
       </main>
