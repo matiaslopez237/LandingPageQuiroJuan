@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f47b3a"></stop>
+      <stop offset="100%" stop-color="#c8531a"></stop>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f47b3a"></stop>
+      <stop offset="100%" stop-color="#c8531a"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  
+
+  
+  <g fill="url(#spine)">
+    
+    <path d="M 36 10&#xA;             Q 42 10 42 14&#xA;             Q 42 17 39 17&#xA;             L 31 17&#xA;             Q 27 17 27 14&#xA;             Q 27 10 31 10 Z"></path>
+    <path d="M 37 19&#xA;             Q 44 19 44 23&#xA;             Q 44 26 41 26&#xA;             L 30 26&#xA;             Q 26 26 26 23&#xA;             Q 26 19 30 19 Z"></path>
+    
+    <path d="M 38 28&#xA;             Q 46 28 46 32.5&#xA;             Q 46 36 42 36&#xA;             L 30 36&#xA;             Q 26 36 26 32.5&#xA;             Q 26 28 30 28 Z"></path>
+    <path d="M 36 38&#xA;             Q 44 38 44 42&#xA;             Q 44 45 41 45&#xA;             L 27 45&#xA;             Q 23 45 23 42&#xA;             Q 23 38 27 38 Z"></path>
+    
+    <path d="M 32 47&#xA;             Q 41 47 41 51.5&#xA;             Q 41 55 37 55&#xA;             L 23 55&#xA;             Q 19 55 19 51.5&#xA;             Q 19 47 23 47 Z"></path>
+  </g>
+</svg>
