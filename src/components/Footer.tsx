@@ -35,6 +35,9 @@ export default function Footer() {
         <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.35)', marginTop: 8 }}>
           © {new Date().getFullYear()} Lic. Juan Manuel Martinez · Todos los derechos reservados
         </p>
+        <p style={{ fontSize: 11, color: 'rgba(255,255,255,0.2)', marginTop: 4 }}>
+          Desarrollado por ML desarrollos
+        </p>
       </motion.div>
     </footer>
   )
