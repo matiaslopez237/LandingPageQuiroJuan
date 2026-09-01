@@ -63,7 +63,7 @@ export default function About() {
               Su enfoque está centrado en liberar el sistema nervioso para que el organismo funcione en su máxima expresión de forma completamente natural, sin medicamentos.
             </p>
             <p style={{ fontSize: 15, color: '#2D5AA0', lineHeight: 1.85, marginBottom: 32 }}>
-              Trabaja con pacientes de todas las edades, desde bebés hasta adultos mayores, con un trato cercano y personalizado,
+              Trabaja con pacientes de todas las edades, con un trato cercano y personalizado,
               buscando siempre entender la causa raíz de cada caso y no solo los síntomas.
             </p>
 

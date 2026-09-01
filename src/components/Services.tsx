@@ -39,7 +39,7 @@ const services = [
       </>
     ),
     label: 'Para Todas las Edades',
-    desc: 'Desde bebés y niños hasta adultos mayores. La quiropraxia es segura y beneficiosa en todas las etapas de la vida.',
+    desc: 'Desde niños hasta adultos mayores. La quiropraxia es segura y beneficiosa en todas las etapas de la vida.',
   },
   {
     icon: (
